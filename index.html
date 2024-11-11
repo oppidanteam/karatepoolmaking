@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Tournament Pool Maker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2 class="my-4 text-center">Karate Tournament Pool Maker</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="tournament_name">Tournament Name:</label>
+            <input type="text" class="form-control" id="tournament_name" name="tournament_name" required>
+        </div>
+        <div class="form-group">
+            <label for="excel_file">Upload Excel File:</label>
+            <input type="file" class="form-control-file" id="excel_file" name="excel_file" accept=".xlsx" required>
+        </div>
+        <div class="form-group">
+            <label for="logo_file">Upload Logo:</label>
+            <input type="file" class="form-control-file" id="logo_file" name="logo_file" accept="image/*" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate PDF</button>
+    </form>
+</div>
+</body>
+</html>
